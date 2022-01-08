@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+h1,h4{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+h1{
+    /* margin-top: 80px; */
+}
+h4{
+    color: #ececec;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+}
+.enter{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    align-items: center;
+}
+.content{
+    /* border: 2px solid rebeccapurple; */
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    flex-basis: 30%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #cacaca70;
+}
+.item h3{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    
+}
+.item h6{
+    color: #cacaca;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    outline: none;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #00000054;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 200px;
+
+}
+.toolbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.toolbar p{
+    color: #cacaca;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+    /* background-color: #fff; */
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.start{
+    text-align: center;
+    color: #cacaca;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}

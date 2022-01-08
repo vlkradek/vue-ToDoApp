@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="app">
+        <div class="enter">
+            <div class="title">
+                <h1>ToDo app</h1>
+                <h4>using Vue</h4>
+            </div>
+                <input type="text" @keydown.enter='getData' placeholder="Insert task name" v-model='content' ref='new' autofocus name="input">
+    
+        </div>
+        <div class="content">
+            <div v-for='item in list' class="item">
+                <div class="toolbar">
+                    <h6>Task</h6>
+                    <p v-on:click='remove(item)'>X</p>
+                </div>
+                <h3>{{item.name}}</h3>
+            </div>
+        </div>
+        <h2 class="start">{{start}}</h2>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script.js"></script>
+</body>
+</html>
